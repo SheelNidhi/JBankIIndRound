@@ -20,6 +20,7 @@ public class Main {
         t2.start();
         t1.join();
         t2.join();
+
         int totalSum = threadSum1.getAnswer() + threadSum2.getAnswer();
 
         System.out.println("Total Sum: " + totalSum);

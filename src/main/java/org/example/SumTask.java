@@ -17,6 +17,7 @@ public class SumTask implements Callable<Long> {
         for(int i =start ; i <end; i++){
             sum += arr[i];
         }
-        return sum;
+        return sum
+                ;
     }
 }
