@@ -16,7 +16,8 @@ public class ThreadSumFuture {
         long total = v1.get() + v2.get();
 
         executorService.shutdown();
-
+  ExecutorService executorService1 = Executors.newFixedThreadPool(20);
+Future<Long> v3= executorService1.submit(new SumTask(arr,0,5));
 
         System.out.println("Total Sum: " + total);
     }

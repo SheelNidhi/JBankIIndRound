@@ -6,7 +6,7 @@ import java.util.concurrent.Callable;
 public class ThreadSum implements Runnable {
 
     //10 thread
-    int arr[] = new int [10];
+    int arr[] ;
     int start;
     int end;
     int answer ;
